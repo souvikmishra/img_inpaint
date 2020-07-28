@@ -5,14 +5,70 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="">
+  <style>
+
+    p {
+        padding:0;
+      }
+      
+    body {
+        margin: 0px;
+    }
+      
+    #side {
+        color: #0000009e;
+        height: 100%;
+        width: 37%;
+        position: fixed;
+        background-color: rgb(99, 193, 222);
+    }
+
+    #lh {
+        position: relative;
+        width: 100%;
+        margin-top: 35vh;
+    }
+
+    .btn {
+      background-color: #000000af;
+      border: none;
+      color: white;
+      padding: 10px 25px;
+    }
+
+    article {
+        display: block; 
+        height: 1200px;
+        padding: 100px 20px 20px 50px;
+        position: absolute; 
+        left: 37%;
+    }
+
+    article p {
+        margin: 0 50;
+    }
+
+  </style>
 </head>
 <body>
 
-  <form method="post" enctype=multipart/form-data>
-    <input type="file" name='file' multiple>
-    <input class="btn" type="submit" value="Upload">
-  </form>
+  <header id="side">
+    <center>
+      <div id="lh">
+        <h1>Image Inpainter</h1>
+        <p><i>To try the web-app...</i></p>
+        <p><i>Upload a Masked Image and it's Mask</i></p>
+        <form method="post" enctype=multipart/form-data>
+          <input type="file" name='file' multiple/>
+          <input class="btn" type="submit" value="Upload"/>
+        </form>
+      </div>
+    </center>
+  </header>
+  
+  <article id="right">
+    <p>Here we can write a blog/ about image inpainting/what we've done, etc</p>
+  </article>
 
 </body>
 </html>

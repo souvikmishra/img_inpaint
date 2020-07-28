@@ -23,7 +23,6 @@ def index():
         files = request.files.getlist('file')
         if files[0].filename == '':
             return redirect(request.url)
-
         for file in files:
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], file.filename))
         imginp(os.path.join(app.config['UPLOAD_FOLDER'], files[0].filename),

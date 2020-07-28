@@ -1,4 +1,4 @@
-env/
+ev/
 *.png
 content/
-__pycache__
+__pycache__/
